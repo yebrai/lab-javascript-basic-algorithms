@@ -64,7 +64,7 @@ console.log(naviLexi)
 
 let loremMult = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 
-//bonus 2
+//bonus 1.2
 // Veo patron, cada parrafo tiene +1 numer de palabras por cada espacio, por eso declaro la variable en "1"
 let count = 1
 for (let i = 0; i < loremMult.length; i++) {
@@ -74,3 +74,15 @@ for (let i = 0; i < loremMult.length; i++) {
         }
           
 } console.log(count)
+
+//bonus 1.3
+
+let countEt = 0
+for (let i = 0; i < loremMult.length; i++) {
+  let char1 = loremMult[i]
+  let char2 = loremMult[i + 1]
+        if (char1 === "e" && char2 === "t") {
+          countEt++
+        }
+          
+} console.log(countEt)
