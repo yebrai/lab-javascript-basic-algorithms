@@ -69,7 +69,7 @@ let loremMult =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
 //bonus 1.2
-// Veo patron, cada parrafo tiene +1 numer de palabras por cada espacio, por eso declaro la variable en "1"
+// Aprecio patron. Las palabras son las mismas que los espacios, sin contar la primera palabra del texto, por ello declaro la variable count con "1"
 let count = 1;
 for (let i = 0; i < loremMult.length; i++) {
   let char1 = loremMult[i];
@@ -93,21 +93,19 @@ console.log(countEt);
 
 //Bonus 2
 
-let phraseToCheck = "step on no pets"
-let palindrome = ""
-let result = ""
+let phraseToCheck = "step on no pets";
+let palindrome = "";
+let result = "";
 for (let i = phraseToCheck.length - 1; i >= 0; i--) {
-    palindrome += phraseToCheck[i]
-} 
-for (let i = 0; i < palindrome.length ; i++) {
-    result += palindrome[i]
-
-
+  palindrome += phraseToCheck[i];
 }
-console.log(phraseToCheck)
-console.log(palindrome)
+for (let i = 0; i < palindrome.length; i++) {
+  result += palindrome[i];
+}
+console.log(phraseToCheck);
+console.log(palindrome);
 if (phraseToCheck === result) {
-  console.log("Its a Palindrome!!! :)")
+  console.log("Its a Palindrome!!! :)");
 } else {
-  console.log("Isnt a Palindrome!!! :(")
+  console.log("Isnt a Palindrome!!! :(");
 }
