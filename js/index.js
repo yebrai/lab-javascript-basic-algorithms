@@ -34,9 +34,10 @@ console.log(nameUpper)
 
 //3.2
 let nameReverse = ""
-for (let i = hacker1.length; 0 < hacker1.length; i--) {
+for (let i = hacker1.length - 1; i >= 0; i--) {
     nameReverse += hacker1[i]
 }
+console.log(nameReverse)
 
 //3.3
 let hacker1 = "Yebrai"
