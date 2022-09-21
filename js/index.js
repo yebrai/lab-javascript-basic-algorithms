@@ -29,13 +29,15 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 let nameUpper = "";
 for (let i = 0; i < hacker1.length; i++) {
-  nameUpper += hacker1[i].toUpperCase();
-  if ((nameUpper[i] = String)) {
+  let comp = hacker1[i + 1]
+  nameUpper += hacker1[i].toUpperCase();  {
+        if (comp === undefined) {
+      break;
+    }
     nameUpper += " ";
-  }
-}
-nameUpper = nameUpper.slice(0, -1);
 
+    }
+}
 console.log(nameUpper);
 
 //3.2
