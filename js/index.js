@@ -53,9 +53,9 @@ for (let i = 0; i < hacker2.length; i++) {
   // console.log(hacker1[i])
   let count2 = hacker2[i];
   // console.log(hacker2[i])
-  if (count1 > count2) {
+  if (count1 < count2) {
     naviLexi = "The driver's name goes first.";
-  } else if (count1 < count2) {
+  } else if (count1 > count2) {
     naviLexi = "Yo, the navigator goes first definitely.";
   } else if (count1 === count2) {
     naviLexi = "What?! You both have the same name?";
@@ -102,8 +102,8 @@ for (let i = phraseToCheck.length - 1; i >= 0; i--) {
 for (let i = 0; i < palindrome.length; i++) {
   result += palindrome[i];
 }
-console.log(phraseToCheck);
-console.log(palindrome);
+//console.log(phraseToCheck);
+//console.log(palindrome);
 if (phraseToCheck === result) {
   console.log("Its a Palindrome!!! :)");
 } else {
